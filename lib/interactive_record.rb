@@ -53,7 +53,7 @@ def self.find_by_name(name)
 end
 def self.find_by(attribute)
         column_name = att.keys[0].to_s
-        value_name = attribute.values[0]
+        value_name = att.values[0]
     
         sql = <<-SQL
           SELECT * FROM #{table_name}
