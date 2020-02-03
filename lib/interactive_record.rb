@@ -52,7 +52,7 @@ def self.find_by_name(name)
   DB[:conn].execute(sql, name)
 end
 def self.find_by(attribute)
-        column_name = attribute.keys[0].to_s
+        column_name = att.keys[0].to_s
         value_name = attribute.values[0]
     
         sql = <<-SQL
